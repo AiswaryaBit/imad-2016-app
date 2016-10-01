@@ -2,10 +2,10 @@ function validateform(){
 var passw=  /^[A-Za-z]\w{7,14}$/;
 var name=document.myform.name.value;
 var pass=document.myform.password.value;
-if(name==null || name=""){
+if(name===null || name===""){
 alert("Name can't be blank");
 return false;
-}else if(pass=null || pass==""){
+}else if(pass===null || pass===""){
 alert("password cannnot be enmpty");
 return false;
 }
